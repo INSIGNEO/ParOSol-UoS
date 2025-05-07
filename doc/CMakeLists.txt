@@ -1,0 +1,6 @@
+install(FILES building.md DESTINATION share/doc/parosol)
+install(FILES file_format.md DESTINATION share/doc/parosol)
+install(FILES index.md DESTINATION share/doc/parosol)
+install(FILES quickstart.md DESTINATION share/doc/parosol)
+install(FILES using_parosol.md DESTINATION share/doc/parosol)
+install(FILES visualize.md DESTINATION share/doc/parosol)
