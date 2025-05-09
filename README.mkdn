@@ -18,16 +18,16 @@ The following changes have been made at University of Sheffield/INSIGNEO to make
 2. Deactivated the option to use parallel HDF5 functionality in CMakeLists.txt which prevented successful compilation
 3. Corrected a formatting issue in multiple source files that prevented successful compilation
 
-For the purposes at the ability to input boundary conditions for the bodyforce and tractions separately was implemented.
-The hdf5 input file format allows for additional datasets "Bodyforce_Coordinates", "Bodyforce_Values", "Tractions_Coordinates" and "Tractions_Values" which work analogously to the force boundary conditions.
+For the purposes of code verification, the ability to input boundary conditions for the bodyforce and tractions separately was implemented.
+The hdf5 input file format now allows for additional datasets "Bodyforce_Coordinates", "Bodyforce_Values", "Tractions_Coordinates" and "Tractions_Values" which work analogously to the force boundary conditions.
 
 ## TU Wien modifications ##
 
 The following changes have been made:
 
-    The code now works with a consistent system of units (m and Pa or mm and MPa).
-    The Poisson ratio that is read from the input HDF5 data is used, not the hard coded one.
-    The ParOSol output is formatted like ParFE output (but only to the level needed by the postprocessing tools used at ILSB TU Wien.)
+1. The code now works with a consistent system of units (m and Pa or mm and MPa).
+2. The Poisson ratio that is read from the input HDF5 data is used, not the hard coded one.
+3. The ParOSol output is formatted like ParFE output (but only to the level needed by the postprocessing tools used at ILSB TU Wien.)
 
 Note that the data format used by the original ParOSol is not compatible with
 this version! You can use the .h5 as well, but they need to be patched first.
