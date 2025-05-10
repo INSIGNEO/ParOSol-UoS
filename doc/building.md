@@ -49,9 +49,9 @@ set the following variables:
 
 Eigen is a pure template library. This means the library 
 consists of header files only. This can be easily included 
-by the header path switch (-I for _GCC_ ). If eigen3 is 
+by the header path switch (-I for _GCC_). If eigen3 is 
 installed, rename the root folder of the installation 
-location (e.g. from eigen-3.4.0 to eigen3 and set the 
+location (e.g. from eigen-3.4.0) to eigen3 and set the 
 following variable:
 
     CMAKE_CXX_FLAGS:STRING=-I/path/toeigen
