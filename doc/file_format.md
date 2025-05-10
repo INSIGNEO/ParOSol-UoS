@@ -92,6 +92,45 @@ can optionally defined:
         stores the amount of the load per node. This dataset must have the
         same number of rows as `Loaded_Nodes_Coordinates`.
 
+-   `/Image_Data/Bodyforce_Coordinates`
+    -   Type: `H5T_STD_U16LE`
+    -   Size: `(l, 4)`
+    -   Description: This datasets is optional. It describes which nodes
+        have a body force applied on them.  The first 3 values are the 
+        indices of the nodes. The fourth value describes the direction in 
+        which the force acts (`0 = x`, `1 = y`, `2 = z`).
+        The index has to be given in `(z, y, x)` format.
+
+-   `/Image_Data/Bodyforce_Values`
+    -   Type: `H5T_IEEE_F32LE`
+    -   Size: `l`
+    -   Description: This dataset is optional. It is strongly related
+        to `Bodyforce_Coordinates`. `Bodyforce_Coordinates` stores
+        the position and the direction of the nodes where the body force
+        is applied and this dataset stores the amount of the force per 
+        node. This dataset must have the same number of rows as 
+        `Bodyforce_Coordinates`.
+
+-   `/Image_Data/Tractions_Coordinates`
+    -   Type: `H5T_STD_U16LE`
+    -   Size: `(l, 4)`
+    -   Description: This datasets is optional. It describes which boundary
+        nodes have surface tractions applied on them.  The first 3 values 
+        are the indices of the boundary nodes. The fourth value describes 
+        the direction in which the traction acts 
+        (`0 = x`, `1 = y`, `2 = z`).
+        The index has to be given in `(z, y, x)` format.
+
+-   `/Image_Data/Tractions_Values`
+    -   Type: `H5T_IEEE_F32LE`
+    -   Size: `l`
+    -   Description: This dataset is optional. It is strongly related
+        to `Tractions_Coordinates`. `Tractions_Coordinates` stores
+        the position and the direction of the surface nodes where the 
+        traction is applied and this dataset stores the amount of the 
+        force per node. This dataset must have the same number of rows as 
+        `Tractions_Coordinates`.
+
 ## Output file format ##
 
 ParOSol writes the solution and the mesh. The mesh is needed to
@@ -164,5 +203,4 @@ The results and some post processing values are stored in the group
     -   Type: `HST_STD_F64LE`
     -   Size: `(n, 6)`
     -   Description: symmetric components stress tensor for each element.
-
 
