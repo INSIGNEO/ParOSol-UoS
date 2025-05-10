@@ -1,4 +1,6 @@
-# ParOSol UoS
+# ParOSol-UoS
+
+See [README](../README.mkdn) for essential details about ParOSol-UoS.
 
 ## Overview ##
 
@@ -7,42 +9,3 @@
 * [Visualizing results](visualize.md)
 * [File Format](file_format.md)
 * [Building and extending ParOSol](building.md)
-
-## Introduction ##
-
-### ParOSol ###
-
-ParOSol stands for PARallel Octree SOLver.
-
-It is a fully-parallel micro-FE analysis code based on Octree to
-solve linear elasticity problems. Because it works on equal sized 
-voxel geometry, it solves the problem direct on 3D images, which 
-can be obtained by CT scans.
-
-### ParOSol TU Wien ###
-
-ParOSol TU Wien is a fork of the original ParOSol described in the
-PhD thesis of C. Flaig. It comprises the following changes relative
-to the original code:
-
-1. The code now works with a consistent system of units (m and Pa or 
-mm and MPa).
-2. The Poisson ratio that is read from the input HDF5 data is used, 
-not the hard coded one.
-3. The ParOSol output is formatted like ParFE output (but only to 
-the level needed by the postprocessing tools used at
-[ILSB TU Wien](https://www.ilsb.tuwien.ac.at/).)
-
-Note that the data format used by the original ParOSol is not 
-compatible with ParOSol TU Wien. The changes in code have been 
-tested well at the [ILSB TU Wien](https://www.ilsb.tuwien.ac.at/), 
-but are provided without warranty of any kind.
-
-### ParOSol UoS ###
-
-ParOSol-UoS (the code supplied here) is a snapshot of modifications 
-made to ParOSol TU Wien at the University of Sheffield. It contains 
-the changes set out in the README file in the root directory. The 
-code has been verified using MMS-1, but is provided without 
-warranty of any kind. Use at your own discretion.
-
