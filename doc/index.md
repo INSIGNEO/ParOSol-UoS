@@ -10,12 +10,16 @@
 
 ## Introduction ##
 
+### ParOSol ###
+
 ParOSol stands for PARallel Octree SOLver.
 
 It is a fully-parallel micro-FE analysis code based on Octree to
 solve linear elasticity problems. Because it works on equal sized 
 voxel geometry, it solves the problem direct on 3D images, which 
 can be obtained by CT scans.
+
+### ParOSol TU Wien ###
 
 ParOSol TU Wien is a fork of the original ParOSol described in the
 PhD thesis of C. Flaig. It comprises the following changes relative
@@ -33,6 +37,8 @@ Note that the data format used by the original ParOSol is not
 compatible with ParOSol TU Wien. The changes in code have been 
 tested well at the [ILSB TU Wien](https://www.ilsb.tuwien.ac.at/), 
 but are provided without warranty of any kind.
+
+### ParOSol UoS ###
 
 ParOSol-UoS (the code supplied here) is a snapshot of modifications 
 made to ParOSol TU Wien at the University of Sheffield. It contains 
