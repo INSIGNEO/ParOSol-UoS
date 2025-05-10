@@ -58,8 +58,8 @@ boundary conditions.
 2. Modified files in the root and doc folder to reflect above 
 changes and to update external links to the date of publication.
 
-Notwithstanding the above code-verification results, the code here
-is provided without warranty of any kind. Use at your own discretion.
+Regardless of code-verification, the code here is provided without 
+warranty of any kind. Use at your own discretion.
 
 ## Licence ##
 
