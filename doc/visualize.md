@@ -7,7 +7,7 @@ file describes how to read the h5 mesh file.
     createxmf.py sphere.h5
 
 A file `sphere.xmf` will be placed next to the `.h5` file.
-The newly generated file can be opened with [Paraview](http://paraview.org).
+The newly generated file can be opened with [Paraview](https://paraview.org).
 
 Paraview has many features and filters for post-processing of the data.
 
