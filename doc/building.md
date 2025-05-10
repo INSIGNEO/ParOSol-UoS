@@ -22,7 +22,7 @@ to run an example mesh.
 ParOSol has minimal dependencies on other libraries. 
 This simplifies the installation process. To build 
 ParOSol [HDF5 library 1.8](https://www.hdfgroup.org/solutions/hdf5/) 
-and [eigen v3] (https://eigen.tuxfamily.org/index.php?title=Main_Page) 
+and [eigen v3](https://eigen.tuxfamily.org/index.php?title=Main_Page) 
 have to be installed. An MPI-compiler has to be used. 
 OpenMPI and MPICH2 are supported. If you are using an MPI
 compiler, please use the HDF5 library that is supplied by
