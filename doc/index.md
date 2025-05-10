@@ -17,8 +17,9 @@ solve linear elasticity problems. Because it works on equal sized
 voxel geometry, it solves the problem direct on 3D images, which 
 can be obtained by CT scans.
 
-ParOSol TU Wien is a fork of ParOSol. The following changes have 
-been made:
+ParOSol TU Wien is a fork of the original ParOSol described in the
+PhD thesis of C. Flaig. It comprises the following changes relative
+to the original code:
 
 1. The code now works with a consistent system of units (m and Pa or 
 mm and MPa).
@@ -29,16 +30,13 @@ the level needed by the postprocessing tools used at
 [ILSB TU Wien](https://www.ilsb.tuwien.ac.at/).)
 
 Note that the data format used by the original ParOSol is not 
-compatible with this version! You can use the .h5 as well, but they 
-need to be patched first.
-
-The changes in code have been tested well at the
-[ILSB TU Wien](https://www.ilsb.tuwien.ac.at/), but are still provided 
-without warranty of any kind. Use at your own discretion.
+compatible with ParOSol TU Wien. The changes in code have been 
+tested well at the [ILSB TU Wien](https://www.ilsb.tuwien.ac.at/), 
+but are provided without warranty of any kind.
 
 ParOSol-UoS (the code supplied here) is a snapshot of modifications 
 made to ParOSol TU Wien at the University of Sheffield. It contains 
-the changes set out in the README file in the root directory. The code
-has been verified using MMS-1, but is provided without warranty of any 
-kind. Use at your own discretion.
+the changes set out in the README file in the root directory. The 
+code has been verified using MMS-1, but is provided without 
+warranty of any kind. Use at your own discretion.
 
