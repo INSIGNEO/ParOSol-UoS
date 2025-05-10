@@ -1,4 +1,4 @@
-# ParOSol TU Wien
+# ParOSol UoS
 
 ## Overview ##
 
