@@ -1,9 +1,6 @@
 # Quickstart #
 
-The easiest way is to use the `Makefile` in this repository: [parosol_example](https://github.com/reox/parosol_example).
-
-
-Or you can also run the examples in this repository.
+You can run the examples supplied.
 
 We consider that the `parosol` and `createxmf` executable is in `$PATH`.
 
