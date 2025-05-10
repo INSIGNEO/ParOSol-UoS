@@ -7,31 +7,49 @@ ParOSol stands for PARallel Octree SoLver.
 It is a fully-parallel micro-FE analysis code based on Octree to solve
 linear elasticity problems. Because it works on equal sized voxel geometry,
 it solves the problem direct on 3D images, which can be obtained by CT scans.
-
-## University of Sheffield modifications ##
-
-This is the version of ParOSol modified at the University of Sheffield based on the TU Wien fork (https://github.com/reox/parosol-tu-wien).
-
-The following changes have been made at University of Sheffield/INSIGNEO to make it compile correctly:
-
-1. Modified do_configure.sh to include paths to the libraries eigen and HDF5 installed on Sheffield HPC infrastructure (modify as needed)
-2. Deactivated the option to use parallel HDF5 functionality in CMakeLists.txt which prevented successful compilation
-3. Corrected a formatting issue in multiple source files that prevented successful compilation
-
-For the purposes of code verification, the ability to input boundary conditions for the bodyforce and tractions separately was implemented.
-The hdf5 input file format now allows for additional datasets "Bodyforce_Coordinates", "Bodyforce_Values", "Tractions_Coordinates" and "Tractions_Values" which work analogously to the force boundary conditions.
+The original ParOSol (as described in the PhD Thesis of C. Flaig) was not 
+publicly available at the time of publishing this ParOSol-UoS version. 
 
 ## TU Wien modifications ##
 
-The following changes have been made:
+ParOSol TU Wien is a fork of the original ParOSol code. It comprises the 
+following changes:
 
-1. The code now works with a consistent system of units (m and Pa or mm and MPa).
-2. The Poisson ratio that is read from the input HDF5 data is used, not the hard coded one.
-3. The ParOSol output is formatted like ParFE output (but only to the level needed by the postprocessing tools used at ILSB TU Wien.)
+1. The code now works with a consistent system of units (m and Pa or mm and 
+MPa).
+2. The Poisson ratio that is read from the input HDF5 data is used, not the 
+hard coded one.
+3. The ParOSol output is formatted like ParFE output (but only to the level 
+needed by the postprocessing tools used at ILSB TU Wien.)
 
 Note that the data format used by the original ParOSol is not compatible with
-this version! You can use the .h5 as well, but they need to be patched first.
-Use at your own discretion.
+ParOSol TU Wien!
+
+## University of Sheffield modifications ##
+
+This version of ParOSol, named ParOSol-UoS, was modified at the University of 
+Sheffield (UoS). It is based on the TU Wien fork described above. It is 
+compatible with the code-verification results published in the manuscript(s)
+below:
+
+
+The following changes have been made at the University of Sheffield.
+
+To make the code compile correctly:
+1. Deactivated the option to use parallel HDF5 functionality in 
+src/CMakeLists.txt,
+2. In relevant source files, added a space between successive ">"-s when 
+using nested template classes.
+
+For the purposes of code verification:
+1. Implemented the ability to read boundary conditions for the bodyforce 
+and tractions separately. This reflects also changes expected in the hdf5 
+input file format, where additional datasets named 
+"Bodyforce_Coordinates", "Bodyforce_Values", "Tractions_Coordinates" and
+"Tractions_Values" can be defined. These datasets work analogously to the 
+existing definition for force boundary conditions.
+2. Modified the documentation files under doc folder to reflect above 
+changes and updated external links to the date of publication
 
 ## Licence ##
 
