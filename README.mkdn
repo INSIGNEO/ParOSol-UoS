@@ -7,13 +7,14 @@ ParOSol stands for PARallel Octree SoLver.
 It is a fully-parallel micro-FE analysis code based on Octree to solve
 linear elasticity problems. Because it works on equal sized voxel geometry,
 it solves the problem direct on 3D images, which can be obtained by CT scans.
-The original ParOSol (as described in the PhD Thesis of C. Flaig) was not 
-publicly available at the time of publishing this ParOSol-UoS version. 
+The original ParOSol (as described in the 
+[PhD Thesis of C. Flaig](https://doi.org/10.3929/ethz-a-007613965)) was not 
+publicly available at the time of the publication of this repository.
 
 ## TU Wien modifications ##
 
-ParOSol TU Wien is a fork of the original ParOSol code. It comprises the 
-following changes:
+[ParOSol TU Wien](https://github.com/reox/parosol-tu-wien) is a fork of the 
+original ParOSol code. It comprises the following changes:
 
 1. The code now works with a consistent system of units (m and Pa or mm and 
 MPa).
@@ -27,9 +28,9 @@ ParOSol TU Wien!
 
 ## University of Sheffield modifications ##
 
-This version of ParOSol, named ParOSol-UoS, was modified at the University of 
-Sheffield (UoS). It is based on the TU Wien fork described above. It is 
-compatible with the code-verification results published in the manuscript(s)
+The version of ParOSol published here, named ParOSol-UoS, was modified at the 
+University of Sheffield (UoS). It is based on the TU Wien fork described above. 
+It is compatible with the code-verification results published in the manuscript(s)
 below:
 
 
@@ -49,7 +50,7 @@ input file format, where additional datasets named
 "Tractions_Values" can be defined. These datasets work analogously to the 
 existing definition for force boundary conditions.
 2. Modified the documentation files under doc folder to reflect above 
-changes and updated external links to the date of publication
+changes and updated external links to the date of publication.
 
 ## Licence ##
 
