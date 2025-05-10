@@ -20,15 +20,12 @@ precision and little endian.
 
 The table gives an overview on the used formats
 
-  native      hdf5 type
-  ---------   -------------------
-  `float`     `H5T_IEEE_F32LE`
-  
-  `double`    `H5T_IEEE_F64LE`
-
-  `short`     `H5T_STD_U16LE`
-
-  `long`      `H5T_STD_I64LE`
+native | hdf5 type
+--- | ---
+`float` | `H5T_IEEE_F32LE`
+`double` | `H5T_IEEE_F64LE`
+`short` | `H5T_STD_U16LE`
+`long` | `H5T_STD_I64LE`
 
 
 ## Input File Format ##
