@@ -23,15 +23,15 @@ hard coded one.
 3. The ParOSol output is formatted like ParFE output (but only to the level 
 needed by the postprocessing tools used at ILSB TU Wien.)
 
-Note that the data format used by the original ParOSol is not compatible with
-ParOSol TU Wien!
+Note that the data format used by the original ParOSol is not compatible 
+with ParOSol TU Wien!
 
 ## University of Sheffield modifications ##
 
 The version of ParOSol published here, named ParOSol-UoS, was modified at the 
-University of Sheffield (UoS). It is based on the TU Wien fork described above. 
-It is compatible with the code-verification results published in the manuscript(s)
-below:
+University of Sheffield (UoS). It is based on the TU Wien fork described 
+above. It is compatible with the code-verification results published in the 
+manuscript(s) below:
 
 
 The following changes have been made at the University of Sheffield.
@@ -49,8 +49,8 @@ input file format, where additional datasets named
 "Bodyforce_Coordinates", "Bodyforce_Values", "Tractions_Coordinates" and
 "Tractions_Values" can be defined. These datasets work analogously to the 
 existing definition for force boundary conditions.
-2. Modified the documentation files under doc folder to reflect above 
-changes and updated external links to the date of publication.
+2. Modified files in the root and doc folder to reflect above changes and to 
+update external links to the date of publication.
 
 ## Licence ##
 
