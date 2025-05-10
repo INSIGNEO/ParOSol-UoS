@@ -54,7 +54,7 @@ installed, rename the root folder of the installation
 location (e.g. from eigen-3.4.0) to eigen3 and set the 
 following variable:
 
-    CMAKE_CXX_FLAGS:STRING=-I/path/toeigen
+    CMAKE_CXX_FLAGS:STRING=-I/path/to/eigen3
 
 In the directory `build/` there is a sample configure script 
 called `do_configure.sh`. The script can be executed with 
