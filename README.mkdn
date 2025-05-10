@@ -35,7 +35,7 @@ compatible with ParOSol TU Wien. The changes in code have been
 tested well at the [ILSB TU Wien](https://www.ilsb.tuwien.ac.at/), 
 but are provided without warranty of any kind.
 
-### ParOSol UoS ###
+### ParOSol-UoS ###
 
 ParOSol-UoS (the code supplied here) is a snapshot of modifications 
 made to ParOSol TU Wien at the University of Sheffield. The changes
