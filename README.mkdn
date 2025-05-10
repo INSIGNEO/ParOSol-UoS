@@ -58,10 +58,6 @@ boundary conditions.
 2. Modified files in the root and doc folder to reflect above 
 changes and to update external links to the date of publication.
 
-The changes to the code are compatible with the code-verification 
-results against MMS-1 as published in the manuscript(s) below:
-
-
 Notwithstanding the above code-verification results, the code here
 is provided without warranty of any kind. Use at your own discretion.
 
