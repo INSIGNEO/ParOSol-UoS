@@ -2,55 +2,68 @@
 
 ## Introduction ##
 
-ParOSol stands for PARallel Octree SoLver.
+### ParOSol ###
 
-It is a fully-parallel micro-FE analysis code based on Octree to solve
-linear elasticity problems. Because it works on equal sized voxel geometry,
-it solves the problem direct on 3D images, which can be obtained by CT scans.
-The original ParOSol (as described in the 
-[PhD Thesis of C. Flaig](https://doi.org/10.3929/ethz-a-007613965)) was not 
-publicly available at the time of the publication of this repository.
+ParOSol stands for PARallel Octree SOLver.
 
-## TU Wien modifications ##
+It is a fully-parallel micro-FE analysis code based on Octree to
+solve linear elasticity problems. Because it works on equal sized 
+voxel geometry, it solves the problem direct on 3D images, which 
+can be obtained by CT scans.
 
-[ParOSol TU Wien](https://github.com/reox/parosol-tu-wien) is a fork of the 
-original ParOSol code. It comprises the following changes:
+At the time of the publication of this repository, the original 
+ParOSol (as described in the 
+[PhD Thesis of C. Flaig](https://doi.org/10.3929/ethz-a-007613965)) 
+was not publicly available.
 
-1. The code now works with a consistent system of units (m and Pa or mm and 
-MPa).
-2. The Poisson ratio that is read from the input HDF5 data is used, not the 
-hard coded one.
-3. The ParOSol output is formatted like ParFE output (but only to the level 
-needed by the postprocessing tools used at ILSB TU Wien.)
+### ParOSol TU Wien ###
 
-Note that the data format used by the original ParOSol is not compatible 
-with ParOSol TU Wien!
+[ParOSol TU Wien](https://github.com/reox/parosol-tu-wien) is a 
+fork of the original ParOSol code. It comprises the following changes
+relative to the original ParOSol code:
 
-## University of Sheffield modifications ##
+1. The code now works with a consistent system of units (m and Pa or 
+mm and MPa).
+2. The Poisson ratio that is read from the input HDF5 data is used, 
+not the hard coded one.
+3. The ParOSol output is formatted like ParFE output (but only to 
+the level needed by the postprocessing tools used at
+[ILSB TU Wien](https://www.ilsb.tuwien.ac.at/).)
 
-The version of ParOSol published here, named ParOSol-UoS, was modified at the 
-University of Sheffield (UoS). It is based on the TU Wien fork described 
-above. It is compatible with the code-verification results published in the 
-manuscript(s) below:
+Note that the data format used by the original ParOSol is not 
+compatible with ParOSol TU Wien. The changes in code have been 
+tested well at the [ILSB TU Wien](https://www.ilsb.tuwien.ac.at/), 
+but are provided without warranty of any kind.
 
+### ParOSol UoS ###
 
-The following changes have been made at the University of Sheffield.
+ParOSol-UoS (the code supplied here) is a snapshot of modifications 
+made to ParOSol TU Wien at the University of Sheffield. The changes
+made are described below:
 
 To make the code compile correctly:
 1. Deactivated the option to use parallel HDF5 functionality in 
 src/CMakeLists.txt,
-2. In relevant source files, added a space between successive ">"-s when 
-using nested template classes.
+2. In relevant source files, added a space between successive ">"-s 
+when using nested template classes.
 
 For the purposes of code verification:
-1. Implemented the ability to read boundary conditions for the bodyforce 
-and tractions separately. This reflects also changes expected in the hdf5 
-input file format, where additional datasets named 
-"Bodyforce_Coordinates", "Bodyforce_Values", "Tractions_Coordinates" and
-"Tractions_Values" can be defined. These datasets work analogously to the 
-existing definition for force boundary conditions.
-2. Modified files in the root and doc folder to reflect above changes and to 
-update external links to the date of publication.
+1. Implemented the ability to read boundary conditions for the 
+bodyforce and tractions separately. This reflects also changes 
+expected in the hdf5 input file format, where additional datasets 
+named "Bodyforce_Coordinates", "Bodyforce_Values", 
+"Tractions_Coordinates" and "Tractions_Values" can be defined. 
+These datasets have a structure analogous to that of existing force 
+boundary conditions.
+2. Modified files in the root and doc folder to reflect above 
+changes and to update external links to the date of publication.
+
+The changes to the code are compatible with the code-verification 
+results against MMS-1 as published in the manuscript(s) below:
+
+
+Notwithstanding the above code-verification results, the code here
+is provided without warranty of any kind. Use at your own discretion.
 
 ## Licence ##
 
