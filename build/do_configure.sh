@@ -1,8 +1,8 @@
 #!/bin/bash
 cmake \
-    -DCMAKE_CXX_COMPILER:FILEPATH=/usr/local/packages/mpi/openmpi/2.0.1/gcc-4.9.4/bin/mpic++ \
+    -DCMAKE_CXX_COMPILER:FILEPATH=/path/to/executable/mpic++ \
     -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
-    -DHDF5_LIBRARIES:PATH=/shared/mmm_group1/Shared/VOXCON/hdf5-1.12.0/lib/libhdf5.so \
-    -DHDF5_INCLUDE_DIRS:PATH=/shared/mmm_group1/Shared/VOXCON/hdf5-1.12.0/include \
-    -DCMAKE_CXX_FLAGS:STRING=-I/shared/mmm_group1/Shared/VOXCON \
+    -DHDF5_LIBRARIES:PATH=/path/to/lib/file/libhdf5.so \
+    -DHDF5_INCLUDE_DIRS:PATH=/path/to/folder/include \
+    -DCMAKE_CXX_FLAGS:STRING=-I/path/to/parent/of/folder/eigen3 \
     ../src
